@@ -1,0 +1,36 @@
+.mainDivHome{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #004EA8;
+
+    .staticWhatsapp{
+        position: fixed;
+        margin: 93vh 95% ;
+    }
+    @media screen and (max-width:820px) {
+        .staticWhatsapp{
+            position: fixed;
+            margin: 90vh 85% ;
+        }
+    }
+    
+}
+@supports (--moz-context-properties: position) {
+    .staticWhatsapp {
+        /* Your Firefox Developer Edition-specific styles here */
+        /* For example: */
+        position: fixed;
+        margin: 93vh 95%;
+    }
+    @media screen and (max-width:820px) {
+        .staticWhatsapp{
+            position: fixed;
+            margin: 90vh 85% ;
+        }
+    }
+   
+}

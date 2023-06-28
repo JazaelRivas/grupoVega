@@ -1,0 +1,51 @@
+@import "./home";
+@import "./reset";
+@import "./header";
+@import "./hub";
+@import "./about";
+@import "./promos";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    text-decoration: none;
+}
+body {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    font-family: 'Inter', sans-serif;
+    scrollbar-width: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+ 
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+ul{
+    margin: 0;
+}
+
+.bold{
+    font-weight: bold;
+}

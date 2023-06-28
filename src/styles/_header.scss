@@ -1,0 +1,103 @@
+.mainHeader {
+    display: flex;
+    
+    .mainNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 5rem;
+        background-color: black;
+
+        @media screen and (max-width: 768px) {
+            position: fixed;
+            z-index: 5;
+            align-items: center;
+            height: 10rem;
+        }
+    }
+
+    .headerContact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 1rem;
+        filter: invert(90%) sepia(99%) saturate(38%) hue-rotate(197deg) brightness(108%) contrast(99%);
+
+        .headerNumber {
+            display: flex;
+            align-items: center;
+            margin: 0;
+        }
+
+        .headerSchedule {
+            padding-left: 3rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            padding-left: 0;
+            align-items: start;
+            padding-left: 1rem;
+
+            .headerSchedule {
+                padding-left: 0rem;
+            }
+        }
+    }
+
+    .headerLinks {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        padding-right: 1rem;
+        filter: invert(90%) sepia(99%) saturate(38%) hue-rotate(197deg) brightness(108%) contrast(99%);
+
+        @media screen and (max-width:768px) {
+            display: none;
+        }
+    }
+
+
+    .headerMenu {
+        display: none;
+        padding-right: 1rem;
+
+        @media screen and (max-width:768px) {
+            display: block;
+        }
+        .headerMenuModal{
+            position: absolute;
+            z-index: 10;;
+            top: -1%;
+            left: 5;
+            right: 0;
+            bottom: 0;
+            background-color: white;
+            height:105vh;
+            width: 90%;
+            .headerMenuContent{
+                position: static; 
+                z-index: 1;
+                background-color: blue;
+                height: 100%;
+                .headerMenuList{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding-top: 5rem;
+                }
+            }
+        }
+       
+    }
+
+    .headerFont {
+        font-size: clamp(1.5rem, 1vw, 2rem);
+        margin: .5rem 0;
+    }
+
+    
+   
+}
