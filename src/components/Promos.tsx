@@ -38,7 +38,7 @@ export default function Promos() {
 
   return (
     <div className="mainPromos">
-      <h2 className="promosTitle">El cuidado total de tu auto</h2>
+      <h2 className="promosTitle">El cuidado total de tu auto.</h2>
 
       {showCarousel ? (
         <Slider className="sliderPromo" {...settings}>
