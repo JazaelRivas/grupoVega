@@ -47,10 +47,24 @@ export default function Header() {
                         />
                     </a>
                 </div>
+
                 <div className="headerMenu">
                     <SandwichMenu />
                 </div>
 
+                <div className="headerLogo">
+                    <a href="">
+                        <StaticImage
+                            src="../images/gvAmarillo.png"
+                            alt="telefono fijo"
+                            layout="fixed"
+                            width={40}
+                            height={40}
+                            formats={['auto', 'webp', 'avif']}
+                            imgStyle={{ objectFit: 'cover' }}
+                        />
+                    </a>
+                </div>
             </nav>
         </header>
     )

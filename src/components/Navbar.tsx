@@ -7,7 +7,7 @@ export default function Navbar() {
     const [imageSrc, setImageSrc] = useState("../images/gvAmarillo.png");
 
     const changeBackground = () => {
-        if (window.scrollY >= window.innerHeight-200) {
+        if (window.scrollY >= window.innerHeight - 200) {
             setNavbarBackground(true);
         } else {
             setNavbarBackground(false);
@@ -33,7 +33,6 @@ export default function Navbar() {
                     height={100}
                     formats={["auto", "webp", "avif"]}
                     imgStyle={{ objectFit: "cover" }}
-                    class="navAzul"
                 />
             ) : (
                 <StaticImage
@@ -45,7 +44,8 @@ export default function Navbar() {
                     formats={["auto", "webp", "avif"]}
                     imgStyle={{ objectFit: "cover" }}
                 />
-            )}</a>
+            )}
+            </a>
             <div className="linksList ">
                 <a href=""><ul className="hubFont Inicio">Inicio</ul></a>
                 <a href=""><ul className="hubFont">Sobre Nosotros</ul></a>

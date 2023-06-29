@@ -6,7 +6,7 @@ export default function About() {
     return (
         <div className="mainAbout">
             <div className="aboutText">
-                <h2 className="aboutTitle">Quiénes somos</h2>
+                <h2 className="aboutTitle">Quiénes somos.</h2>
                 <div className="aboutContent">
                     <p className="aboutFont">Llevamos orgullosamente 30 años brindando un servicio excepcional a nuestra comunidad.
                         Nos hemos convertido en tu llantería de confianza, siempre dispuestos a ofrecerte la mejor experiencia en el cuidado de tus llantas.
@@ -22,7 +22,7 @@ export default function About() {
                         width={20}
                         height={20}
                         formats={['auto', 'webp', 'avif']}
-                        imgStyle={{ objectFit: 'cover' }}
+                        imgStyle={{ objectFit: 'fill' }}
                         className="paddingAbout"
                     />
                     Contactanos y cotiza tu servicio!
@@ -30,11 +30,10 @@ export default function About() {
             </div>
             <div className="aboutImage">
                 <StaticImage
-                    src="../images/alineacion.jpg"
+                    src="../images/about2.png"
                     alt="telefono fijo"
-                    layout="constrained"
+                    layout="fixed"
                     formats={['auto', 'webp', 'avif']}
-                    placeholder="blurred"
                     className="responsive-image"
                 />
             </div>

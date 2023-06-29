@@ -27,8 +27,8 @@ const SandwichMenu: React.FC = () => {
             src="../images/menu.webp"
             alt="telefono fijo"
             layout="fixed"
-            width={30}
-            height={30}
+            width={20}
+            height={20}
             formats={['auto', 'webp', 'avif']}
             imgStyle={{ objectFit: 'cover' }}
         />  </button>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Slider from "react-slick";
+import Slider, { Settings } from "react-slick";
 import { StaticImage } from "gatsby-plugin-image";
 import "../styles/global.scss";
 import "slick-carousel/slick/slick.scss";
@@ -19,13 +19,21 @@ export default function Promos() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const settings = {
-    dots: false,
+  const settings: Settings = {
+    autoplay:true,
+    arrows:true,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    adaptiveHeight: true,
+    adaptiveHeight: false,
+    appendDots: (dots: JSX.Element) => (
+      <ul className="customDots">{dots}</ul>
+    ),
+    customPaging: () => (
+      <div className="customDot"></div>
+    ),
   };
 
   return (
@@ -33,10 +41,10 @@ export default function Promos() {
       <h2 className="promosTitle">El cuidado total de tu auto</h2>
 
       {showCarousel ? (
-        <Slider {...settings}>
+        <Slider className="sliderPromo" {...settings}>
           <div className="promoCard">
             <h3>Paquete 1</h3>
-            <p>Alineacion <br />y <br />Balanceo</p>
+            <p>Alineacion y Balanceo</p>
           </div>
           <div className="promoCard">
             <h3>Paquete 2</h3>
