@@ -27,12 +27,11 @@ export default function Navbar() {
             <a href="/" >{navbarBackground ? (
                 <StaticImage
                     src="../images/gvAzul.png"
-                    alt="Logo Grupo Vega Azul"
-                    layout="fixed"
-                    width={100}
-                    height={100}
-                    formats={["auto", "webp", "avif"]}
-                    imgStyle={{ objectFit: "cover" }}
+                    alt="telefono fijo"
+                    loading="lazy"
+                    formats={['auto', 'webp', 'avif']}
+                    imgStyle={{ objectFit: 'fill' }}
+                    className="NavbarPhotoBlue"
                 />
             ) : (
                 <StaticImage

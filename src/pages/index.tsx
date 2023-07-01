@@ -1,6 +1,6 @@
 import React from "react"
 import "./main.scss"
-import { Header, Hub , About , Promos } from "../components";
+import { Header, Hub , About , Promos , Brands } from "../components";
 import { StaticImage } from "gatsby-plugin-image";
 
 export default function Index() {
@@ -10,6 +10,7 @@ export default function Index() {
       <Hub />
       <About />
       <Promos/>
+      <Brands/>
       <a href="/" className="staticWhatsapp"> <StaticImage
         src="../images/whatsapp.png"
         alt="contacto whatsapp"

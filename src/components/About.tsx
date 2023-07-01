@@ -9,7 +9,7 @@ export default function About() {
                 <h2 className="aboutTitle">Quiénes somos.</h2>
                 <div className="aboutContent">
                     <p className="aboutFont">Llevamos orgullosamente 30 años brindando un servicio excepcional a nuestra comunidad.
-                        Nos hemos convertido en tu llantería de confianza, siempre dispuestos a ofrecerte la mejor experiencia en el cuidado de tus llantas.
+                        Nos hemos convertido en tu llantera de confianza, siempre dispuestos a ofrecerte la mejor experiencia en el cuidado de tus llantas.
                     </p>
                     <p className="aboutFont"> Gracias por ser parte de nuestra historia de 30 años de servicio excepcional.</p>
                 </div>

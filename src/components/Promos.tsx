@@ -20,8 +20,8 @@ export default function Promos() {
   }, []);
 
   const settings: Settings = {
-    autoplay:true,
-    arrows:true,
+    autoplay: true,
+    arrows: true,
     dots: true,
     infinite: true,
     speed: 500,
@@ -38,8 +38,8 @@ export default function Promos() {
 
   return (
     <div className="mainPromos">
-      <h2 className="promosTitle">El cuidado total de tu auto.</h2>
-
+      <h2 className="promosTitle">El cuidado total de tu auto.  <p className="promosSubtitle">Todo lo que necesitas en un mismo lugar.</p></h2>
+    
       {showCarousel ? (
         <Slider className="sliderPromo" {...settings}>
           <div className="promoCard">
@@ -48,28 +48,34 @@ export default function Promos() {
           </div>
           <div className="promoCard">
             <h3>Paquete 2</h3>
-            <p>Alineacion Balanceo</p>
-            <p>Balanceo</p>
-            <p>Rotacion</p>
-            <p>Limpieza y Ajuste de Frenos</p>
+            <div className="cardContent">
+              <p>Alineacion Balanceo</p>
+              <p>Balanceo</p>
+              <p>Rotacion</p>
+              <p>Limpieza y Ajuste de Frenos</p>
+            </div>
           </div>
           <div className="promoCard">
             <h3>Paquete 3</h3>
-            <p>Alineacion Balanceo</p>
-            <p>Balanceo</p>
-            <p>Rotacion</p>
-            <p>Limpieza y Ajuste de Frenos</p>
-            <p>Cambio de aceite y filtro.</p>
+            <div className="cardContent">
+              <p>Alineacion Balanceo</p>
+              <p>Balanceo</p>
+              <p>Rotacion</p>
+              <p>Limpieza y Ajuste de Frenos</p>
+              <p>Cambio de aceite y filtro.</p>
+            </div>
           </div>
           <div className="promoCard">
             <h3>Paquete 4</h3>
-            <p>Alineacion Balanceo</p>
-            <p>Balanceo</p>
-            <p>Rotacion</p>
-            <p>Limpieza y Ajuste de Frenos</p>
-            <p>Cambio de aceite y filtro.</p>
-            <p>Limpieza de Inyectores <br />de Aceleracion </p>
-            <p>Bujias</p>
+            <div className="cardContent">
+              <p>Alineacion Balanceo</p>
+              <p>Balanceo</p>
+              <p>Rotacion</p>
+              <p>Limpieza y Ajuste de Frenos</p>
+              <p>Cambio de aceite y filtro.</p>
+              <p>Limpieza de Inyectores de Aceleracion </p>
+              <p>Bujias</p>
+            </div>
           </div>
         </Slider>
       ) : (
@@ -80,28 +86,34 @@ export default function Promos() {
           </div>
           <div className="promoCard">
             <h3>Paquete 2</h3>
-            <p>Alineacion Balanceo</p>
-            <p>Balanceo</p>
-            <p>Rotacion</p>
-            <p>Limpieza y Ajuste de Frenos</p>
+            <div className="cardContent">
+              <p>Alineacion Balanceo</p>
+              <p>Balanceo</p>
+              <p>Rotacion</p>
+              <p>Limpieza y Ajuste de Frenos</p>
+            </div>
           </div>
           <div className="promoCard">
             <h3>Paquete 3</h3>
-            <p>Alineacion Balanceo</p>
-            <p>Balanceo</p>
-            <p>Rotacion</p>
-            <p>Limpieza y Ajuste de Frenos</p>
-            <p>Cambio de aceite y filtro.</p>
+            <div className="cardContent">
+              <p>Alineacion Balanceo</p>
+              <p>Balanceo</p>
+              <p>Rotacion</p>
+              <p>Limpieza y Ajuste de Frenos</p>
+              <p>Cambio de aceite y filtro.</p>
+            </div>
           </div>
           <div className="promoCard">
             <h3>Paquete 4</h3>
-            <p>Alineacion Balanceo</p>
-            <p>Balanceo</p>
-            <p>Rotacion</p>
-            <p>Limpieza y Ajuste de Frenos</p>
-            <p>Cambio de aceite y filtro.</p>
-            <p>Limpieza de Inyectores <br />de Aceleracion </p>
-            <p>Bujias</p>
+            <div className="cardContent">
+              <p>Alineacion Balanceo</p>
+              <p>Balanceo</p>
+              <p>Rotacion</p>
+              <p>Limpieza y Ajuste de Frenos</p>
+              <p>Cambio de aceite y filtro.</p>
+              <p>Limpieza de Inyectores de Aceleracion </p>
+              <p>Bujias</p>
+            </div>
           </div>
         </div>
       )}
