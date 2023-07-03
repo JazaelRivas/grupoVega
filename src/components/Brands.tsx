@@ -28,7 +28,7 @@ export default function Brands() {
                     formats={['auto', 'webp', 'avif']}
                     className="tires"
                 />
-                <p>Las marcas que ya conoces con la misma calidad y seguridad de siempre</p>
+                <h3>Las marcas que ya conoces con la misma calidad y seguridad de siempre.</h3>
             </div>
 
         </div>
