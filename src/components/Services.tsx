@@ -33,7 +33,7 @@ export default function Services() {
                 </div>
                 <div className="serviceCard">
                     <StaticImage
-                        src="../images/ayb.png"
+                        src="../images/balanceo.png"
                         alt="telefono fijo"
                         layout="constrained"                        
                         formats={['auto', 'webp', 'avif']}

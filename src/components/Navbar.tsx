@@ -1,8 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "react-scroll";
 import "../styles/global.scss"
 
-export default function Navbar() {
+interface NavbarProps {
+    scrollToSection: (sectionId: string) => void;
+}
+
+export default function Navbar({ scrollToSection }: NavbarProps) {
+    const handleScrollToSection = (sectionId: string) => {
+        scrollToSection(sectionId);
+    };
     const [navbarBackground, setNavbarBackground] = useState(false);
     const [imageSrc, setImageSrc] = useState("../images/gvAmarillo.png");
 
@@ -38,20 +46,74 @@ export default function Navbar() {
                     src="../images/gvAmarillo.png"
                     alt="Logo Grupo Vega Amarillo"
                     layout="fixed"
-                    width={100}
-                    height={100}
+                    width={80}
+                    height={80}
                     formats={["auto", "webp", "avif"]}
                     imgStyle={{ objectFit: "cover" }}
                 />
             )}
             </a>
             <div className="linksList ">
-                <a href=""><ul className="hubFont Inicio">Inicio</ul></a>
-                <a href=""><ul className="hubFont">Sobre Nosotros</ul></a>
-                <a href=""><ul className="hubFont">Paquetes</ul></a>
-                <a href=""><ul className="hubFont">Marcas</ul></a>
-                <a href=""><ul className="hubFont">Servicios</ul></a>
-                <a href=""><ul className="hubFont">Ubicanos</ul></a>
+                <Link
+                    to="/"
+                    spy={true}
+                    smooth={true}
+                    duration={250}
+                    className="hubFont Inicio"
+                    onClick={() => handleScrollToSection("/")}
+                >
+                    Inicio
+                </Link>
+                <Link
+                    to="section-about"
+                    spy={true}
+                    smooth={true}
+                    duration={250}
+                    className="hubFont"
+                    onClick={() => handleScrollToSection("section-about")}
+                >
+                    Sobre Nosotros
+                </Link>
+                <Link
+                    to="section-promos"
+                    spy={true}
+                    smooth={true}
+                    duration={250}
+                    className="hubFont"
+                    onClick={() => handleScrollToSection("section-promos")}
+                >
+                    Paquetes
+                </Link>
+                <Link
+                    to="section-brands"
+                    spy={true}
+                    smooth={true}
+                    duration={250}
+                    className="hubFont"
+                    onClick={() => handleScrollToSection("section-brands")}
+                >
+                    Marcas
+                </Link>
+                <Link
+                    to="section-services"
+                    spy={true}
+                    smooth={true}
+                    duration={250}
+                    className="hubFont"
+                    onClick={() => handleScrollToSection("section-services")}
+                >
+                    Servicios
+                </Link>
+                <Link
+                    to="section-about"
+                    spy={true}
+                    smooth={true}
+                    duration={250}
+                    className="hubFont"
+                    onClick={() => handleScrollToSection("section-about")}
+                >
+                    Ubicanos
+                </Link>
                 <a href="">  <StaticImage
                     src="../images/location.png"
                     alt="Logo Grupo Vega Amarillo"

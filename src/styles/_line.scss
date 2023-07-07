@@ -1,0 +1,67 @@
+.mainLine {
+    display: flex;
+    padding: 5vh;
+    width: 100%;
+    height: auto;
+    color: white;
+    background-color: #222222;
+    align-items: center;
+
+    .linesTitles{
+        width: 50rem;
+        .linesTitle{
+            text-align: start;
+            font-weight: lighter;
+            font-size: 6rem;
+            margin: 0;
+        }
+    }
+    
+    .linesContent {
+      display: flex;
+      width: 80%;
+      height: 50rem;
+      position: relative;
+      align-items: center;
+      margin-right: 15rem;
+        
+      .lineCard {
+        height: 50rem;
+        width: 450px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+  
+        .cardTitle {
+          font-size: 4rem;
+          font-weight: lighter;
+          position: absolute;
+          bottom: 0.1rem;
+          text-align: center;
+          color: white;
+          opacity: 1;
+        }
+      }
+  
+      .lineCard:nth-child(1) {
+        left: 38%;
+        transform: translateX(-50%);
+      }
+  
+      .lineCard:nth-child(2) {
+        left: 45%;
+        transform: translateX(-13%);
+      }
+  
+      .lineCard:nth-child(3) {
+        left: 65%;
+        transform: translateX(-13%);
+      }
+  
+      .lineCard:nth-child(4) {
+        left: 85%;
+        transform: translateX(-13%);
+      }
+    }
+  }
+  

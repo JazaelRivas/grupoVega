@@ -1,0 +1,39 @@
+.mainTrend{
+    width: auto;
+    background-color: white;
+    height: 30vh;
+    .trendImage{
+        width: 100%;
+    }
+    .trendsContainerButton{
+        position: absolute;
+        z-index: 1;
+        left: 37vw;
+        transform: translate(10rem, -15rem);
+    }
+}
+
+.trendsButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #25D366;
+    border-radius: 5rem;
+    color: white;
+    font-weight: bold;
+
+    @media screen and (max-height:600px) {
+        margin: 5rem 3vw 2rem;
+    }
+    @media screen and (max-width:820px) {
+        margin: 0;
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+}
+
+.trendsButton:hover {
+    color: black;
+}

@@ -5,6 +5,9 @@ import About from "./About";
 import Promos from "./Promos";
 import Brands from "./Brands";
 import Services from "./Services";
+import Lines from "./Lines";
+import Trend from "./Trend";
+import Inclusion from "./Inclusion";
 export {
     Header,
     Hub,
@@ -12,5 +15,8 @@ export {
     About,
     Promos,
     Brands,
-    Services
+    Services,
+    Lines,
+    Trend,
+    Inclusion
 }

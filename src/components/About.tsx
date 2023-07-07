@@ -34,7 +34,7 @@ export default function About() {
                     alt="telefono fijo"
                     layout="fixed"
                     formats={['auto', 'webp', 'avif']}
-                    className="responsive-image"
+                   style={{height:'40rem', width:'100rem'}}
                 />
             </div>
         </div>
