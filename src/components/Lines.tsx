@@ -34,7 +34,7 @@ export default function Lines() {
                 </div>
                 <div className="lineCard">
                     <StaticImage
-                        src="../images/Eagle.png"
+                        src="../images/eagle.png"
                         alt="telefono fijo"
                         layout="constrained"
                         formats={['auto', 'webp', 'avif']}

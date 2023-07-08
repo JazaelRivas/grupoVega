@@ -25,7 +25,7 @@ export default function Trend() {
                         imgStyle={{ objectFit: 'fill' }}
                         className="paddingAbout"
                     />
-                    Contactanos y cotiza tu servicio!
+                    Contactanos y cotiza!
                 </button>
             </div>
         </div>

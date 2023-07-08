@@ -39,12 +39,14 @@ export default function Promos() {
   return (
     <div className="mainPromos">
       <h2 className="promosTitle">El cuidado total de tu auto.  <p className="promosSubtitle">Todo lo que necesitas en un mismo lugar.</p></h2>
-    
+
       {showCarousel ? (
         <Slider className="sliderPromo" {...settings}>
           <div className="promoCard">
             <h3>Paquete 1</h3>
-            <p>Alineacion y Balanceo</p>
+            <div className="cardContent">
+              <p>Alineacion y Balanceo</p>
+            </div>
           </div>
           <div className="promoCard">
             <h3>Paquete 2</h3>
@@ -82,10 +84,32 @@ export default function Promos() {
         <div className="promoCards">
           <div className="promoCard">
             <h3>Paquete 1</h3>
-            <p>Alineacion <br />y <br />Balanceo</p>
+            <StaticImage
+              src="../images/puntero.png"
+              alt="telefono fijo"
+              layout="constrained"
+              width={100}
+              height={100}
+              formats={["auto", "webp", "avif"]}
+              imgStyle={{ objectFit: "cover" }}
+              className="click"
+            />
+            <div className="cardContent">
+              <p>Alineacion y Balanceo</p>
+            </div>
           </div>
           <div className="promoCard">
             <h3>Paquete 2</h3>
+            <StaticImage
+              src="../images/puntero.png"
+              alt="telefono fijo"
+              layout="constrained"
+              width={100}
+              height={100}
+              formats={["auto", "webp", "avif"]}
+              imgStyle={{ objectFit: "cover" }}
+              className="click"
+            />
             <div className="cardContent">
               <p>Alineacion Balanceo</p>
               <p>Balanceo</p>
@@ -95,6 +119,16 @@ export default function Promos() {
           </div>
           <div className="promoCard">
             <h3>Paquete 3</h3>
+            <StaticImage
+              src="../images/puntero.png"
+              alt="telefono fijo"
+              layout="constrained"
+              width={100}
+              height={100}
+              formats={["auto", "webp", "avif"]}
+              imgStyle={{ objectFit: "cover" }}
+              className="click"
+            />
             <div className="cardContent">
               <p>Alineacion Balanceo</p>
               <p>Balanceo</p>
@@ -105,6 +139,16 @@ export default function Promos() {
           </div>
           <div className="promoCard">
             <h3>Paquete 4</h3>
+            <StaticImage
+              src="../images/puntero.png"
+              alt="telefono fijo"
+              layout="constrained"
+              width={100}
+              height={100}
+              formats={["auto", "webp", "avif"]}
+              imgStyle={{ objectFit: "cover" }}
+              className="click"
+            />
             <div className="cardContent">
               <p>Alineacion Balanceo</p>
               <p>Balanceo</p>
@@ -128,7 +172,7 @@ export default function Promos() {
           formats={["auto", "webp", "avif"]}
           imgStyle={{ objectFit: "cover" }}
         />
-        Contactanos y cotiza tu servicio!
+        Contactanos y cotiza!
       </button>
     </div>
   );

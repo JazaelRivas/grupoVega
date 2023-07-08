@@ -46,8 +46,8 @@ export default function Navbar({ scrollToSection }: NavbarProps) {
                     src="../images/gvAmarillo.png"
                     alt="Logo Grupo Vega Amarillo"
                     layout="fixed"
-                    width={80}
-                    height={80}
+                    width={60}
+                    height={60}
                     formats={["auto", "webp", "avif"]}
                     imgStyle={{ objectFit: "cover" }}
                 />
@@ -72,7 +72,7 @@ export default function Navbar({ scrollToSection }: NavbarProps) {
                     className="hubFont"
                     onClick={() => handleScrollToSection("section-about")}
                 >
-                    Sobre Nosotros
+                Nosotros
                 </Link>
                 <Link
                     to="section-promos"

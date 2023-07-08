@@ -11,8 +11,9 @@
     font-size: clamp(3rem, 5vw, 7rem);
     font-weight: lighter;
     text-align: start;
-    margin: 2rem 1rem 1rem 0; 
-    .promosSubtitle{
+    margin: 2rem 1rem 1rem 0;
+
+    .promosSubtitle {
       font-size: 3rem;
       margin: 0;
     }
@@ -25,18 +26,22 @@
     h2 {
       margin: 0;
     }
-    .promosTitle{
+
+    .promosTitle {
       margin: .5rem;
-      .promosSubtitle{
+
+      .promosSubtitle {
         font-size: 1.5rem;
         margin-top: .5rem;
       }
     }
   }
+
   @media screen and (max-height:601px) {
-    .promosTitle{
+    .promosTitle {
       margin: .5rem;
-      .promosSubtitle{
+
+      .promosSubtitle {
         font-size: 1.5rem;
       }
     }
@@ -55,6 +60,8 @@
     }
 
     .promoCard {
+
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -62,66 +69,113 @@
       height: 45rem;
       width: 30rem;
       border-radius: 1.5rem;
-      background-color: #004EA8;
+      background-image: url("../images/paquete1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center right;
       color: white;
       gap: 1rem;
       padding: 2rem;
-
-      h3 {
-        font-size: clamp(1.3rem, 5vw, 3rem);
-        margin: 1rem 0.1rem 0.5rem 0;
-      }
-
-      p {
-        padding: 0;
-        margin: 0.1rem;
-      }
-
-      .cardContent{
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        gap: .5rem;
-        font-size: 1.8rem;
-        text-align: start;
-      }
-
-      @media screen and (max-height:601px) {
-        height: 25rem;
-        width: 20rem;
-        gap: 2rem;
-        p{
-          font-size: .7rem;
-        }
-      }
+      object-fit: contain;
+      overflow: hidden;
+      /* Add this line to hide overflow caused by backdrop-filter */
     }
 
-    .promoCard:hover {
-      background-color: white;
-      color: #004EA8;
-      border: 5px solid #004EA8;
+    .promoCard h3 {
+      font-size: clamp(1.3rem, 5vw, 3rem);
+      margin: 1rem 0.1rem 0.5rem 0;
+      position: relative;
+      /* Add this line to create a stacking context */
+      z-index: 2;
+      /* Add this line to place h3 above the ::before pseudo-element */
+
     }
 
-    @media screen and (max-width: 820px) {
-      display: flex;
+    .promoCard p {
+      padding: 0;
+      margin: 0.1rem;
+      position: relative;
+      /* Add this line to create a stacking context */
+      z-index: 2;
+      /* Add this line to place p above the ::before pseudo-element */
+    }
+
+    .promoCard .cardContent {
+      display: none;
       flex-direction: column;
-      height: auto;
-      gap: 2rem;
+      align-items: start;
+      gap: 0.5rem;
+      font-size: 1.8rem;
+      text-align: start;
+      position: relative;
+      /* Add this line to create a stacking context */
+      z-index: 2;
+      /* Add this line to place .cardContent above the ::before pseudo-element */
+    }
 
-      .promoCard {
-        background-color: #25D366;
-        padding: 2rem;
+    .promoCard::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(5px);
+      /* Adjust the blur radius as needed */
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 1;
+      /* Add this line to position ::before below the h3, p, and .cardContent */
+    }
 
-        p {
-          margin: .1rem;
-        }
+    .promoCard:hover::before {
+      opacity: 1;
+    }
 
+    .promoCard:nth-child(2) {
+      background-image: url("../images/paquete2.webp");
+      background-position: center left;
+      backdrop-filter: blur(5px);
+    }
+
+    .promoCard:nth-child(3) {
+      background-image: url("../images/paquete3.jpg");
+      background-position: center ;
+      backdrop-filter: blur(5px);
+    }
+
+    .promoCard:nth-child(4) {
+      background-image: url("../images/paquete4.jpg");
+      background-position: right;
+      backdrop-filter: blur(5px);
+    }
+    .click{
+      filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(88deg) brightness(107%) contrast(101%);
+      margin-top: 8rem;
+    }
+    .promoCard:hover {
+      .cardContent {
+        display: flex;
+        opacity: 0;
+        animation: fadeIn 0.5s ease forwards;
+      }
+      .click{
+        display: none;
       }
     }
 
-    @media screen and (max-height:601px) {
-        gap:2rem
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
+
   }
 
   .promosButton {
@@ -192,15 +246,18 @@
   }
 
   .sliderPromo {
-    background-color: #004EA8;
+    background-color: red;
     border-radius: 1rem;
     height: 85dvh;
-
+    backdrop-filter: blur(5px);
+    background-image: url("../images/paquete3.jpg");
+      background-position: left;
+  
     @media screen and (max-width:820px) {
       height: 60dvh;
     }
   }
-  
+
 
   .slick-list {
     padding: 1rem;
@@ -213,4 +270,5 @@
       margin: .5rem;
     }
   }
+  
 }

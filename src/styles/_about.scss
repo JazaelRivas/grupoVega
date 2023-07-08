@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: auto;
+    height: 100dvh;
     padding: 5vh;
     width: 100%;
     background-color: white;
@@ -13,7 +13,8 @@
         flex-direction: column;
         justify-content: space-around;
         padding: 5rem;
-
+        width: 50vw;
+        font-size: 4rem;
         h2 {
             margin: 0;
             font-weight: lighter;
@@ -69,12 +70,40 @@
     }
 
     .aboutImage {
-        width: 90rem;
+        width: 40vw;
         height: 30rem;
         object-fit: cover;
         display: flex;
         align-items: center;
-
+        .paralelImage {
+            width: 40rem;
+            height: 40rem;
+            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3rem;
+            position: absolute;
+           
+            .gatsby-image-wrapper {
+                width: 100%;
+                height: 100%;
+              }
+        }
+        .paralelImage:nth-child(1){
+            right:5%;
+            transform: translateX(15%);
+            //transform: rotateY(180deg); para rotar la wea 
+        }
+        .paralelImage:nth-child(2){
+            right: 20%;
+            .gatsby-image-wrapper {
+                width: 100%;
+                height: 100%;
+                transform: scale(1.5);
+              }
+        }
         @media screen and (max-height:601px) {
             width: 40%;
         }
@@ -123,6 +152,7 @@
     border-radius: 5rem;
     color: white;
     font-weight: bold;
+    font-size: 2rem;
 
     @media screen and (max-height:600px) {
         margin: 5rem 3vw 2rem;

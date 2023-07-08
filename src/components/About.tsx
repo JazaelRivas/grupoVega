@@ -25,17 +25,24 @@ export default function About() {
                         imgStyle={{ objectFit: 'fill' }}
                         className="paddingAbout"
                     />
-                    Contactanos y cotiza tu servicio!
+                    Contactanos y cotiza!
                 </button>
             </div>
             <div className="aboutImage">
-                <StaticImage
-                    src="../images/about2.png"
+                <div className="paralelImage"> <StaticImage
+                    src="../images/3667.jpg"
                     alt="telefono fijo"
-                    layout="fixed"
+                    layout="fullWidth"
                     formats={['auto', 'webp', 'avif']}
-                   style={{height:'40rem', width:'100rem'}}
-                />
+                    className="paralleImagery"
+                /></div>
+                 <div className="paralelImage"> <StaticImage
+                    src="../images/alineacion.jpg"
+                    alt="telefono fijo"
+                    layout="fullWidth"
+                    formats={['auto', 'webp', 'avif']}
+                    className="paralleImagery"
+                /></div>
             </div>
         </div>
     )

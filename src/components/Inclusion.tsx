@@ -4,15 +4,10 @@ import "../styles/global.scss"
 
 export default function Inclusion() {
     return (
-        <div className="mainAbout">
-            <div className="aboutImage">
-                <StaticImage
-                    src="../images/Inclusion.png"
-                    alt="telefono fijo"
-                    layout="fixed"
-                    formats={['auto', 'webp', 'avif']}
-                    style={{ height: '40rem', width: '100rem' }}
-                />
+        <div className="mainInclusion">
+                <div className="aboutImage">
+                    <div className="paralelImage"></div>
+                    <div className="paralelImage"></div>
             </div>
             <div className="aboutText">
                 <h2 className="aboutTitle">Quiénes somos.</h2>
@@ -34,7 +29,7 @@ export default function Inclusion() {
                         imgStyle={{ objectFit: 'fill' }}
                         className="paddingAbout"
                     />
-                    Contactanos y cotiza tu servicio!
+                    Contactanos y cotiza!
                 </button>
             </div>
         </div>

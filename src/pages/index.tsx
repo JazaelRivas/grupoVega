@@ -1,6 +1,6 @@
 import React from "react"
 import "./main.scss"
-import { Header, Hub, About, Promos, Brands, Services , Lines , Trend , Inclusion } from "../components";
+import { Header, Hub, About, Promos, Brands, Services , Lines , Trend , Inclusion ,  } from "../components";
 import { Link, Element, animateScroll as scroll } from "react-scroll";
 import { StaticImage } from "gatsby-plugin-image";
 

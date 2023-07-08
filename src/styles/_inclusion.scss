@@ -1,0 +1,129 @@
+.mainInclusion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100dvh;
+    padding: 5vh;
+    margin-top: 10vh;
+    width: 100%;
+    background-color: white;
+
+    .aboutImage {
+        width: 40vw;
+        height: 30rem;
+        object-fit: cover;
+        display: flex;
+        align-items: center;
+
+        .paralelImage {
+            width: 40rem;
+            height: 40rem;
+            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3rem;
+            position: absolute;
+
+            .gatsby-image-wrapper {
+                width: 100%;
+                height: 100%;
+                ;
+            }
+        }
+
+        .paralelImage:nth-child(1) {
+            left: 5%;
+            transform: translateX(-15%);
+            background-image: url("../images/inclusion.jpg");
+            background-repeat: no-repeat;
+            background-position: center right;
+            backdrop-filter: blur(5px);
+            background-size: cover;
+            transform: rotateY(180deg); 
+        }
+
+        .paralelImage:nth-child(2) {
+            left: 23%;
+            background-image: url("../images/inclusion2.jpg");
+            background-repeat: no-repeat;
+            background-position: center left;
+            backdrop-filter: blur(5px);
+            background-size: cover;
+            transform: rotateY(180deg); 
+        }
+
+        @media screen and (max-height:601px) {
+            width: 40%;
+        }
+
+        @media screen and (max-width: 820px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width:820px) and (max-height:601px) {
+            width: 100%;
+        }
+
+    }
+
+    .aboutText {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 5rem;
+        width: 50vw;
+        font-size: 4rem;
+        h2 {
+            margin: 0;
+            font-weight: lighter;
+            margin-top: 10rem;
+            text-align: end;
+
+            @media screen and (max-height:601px) {
+                margin-top: 3rem;
+            }
+        }
+
+        p {
+            font-size: clamp(1rem, 5vw, 1rem);
+            text-align: justify;
+        }
+
+        .aboutContent {
+            text-align: end;
+        }
+
+        .aboutFont {
+            font-size: 2rem;
+            text-align: end;
+            font-weight: lighter;
+        }
+
+        @media screen and (max-width:820px) {
+            gap: 2rem;
+
+            .aboutFont {
+                font-size: 1.5rem;
+
+                .aboutButton {
+                    font-size: 1.3rem;
+                    padding: 1rem;
+                    margin: 0;
+                    gap: 0rem;
+
+                    .paddingAbout {
+                        margin-left: 2rem;
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
