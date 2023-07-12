@@ -16,8 +16,8 @@ export default function About() {
 
                 <button className="aboutButton">
                     <StaticImage
-                        src="../images/phone.png"
-                        alt="telefono fijo"
+                        src="../images/whatsapp.png"
+                        alt="boton whatsapp"
                         layout="fixed"
                         width={20}
                         height={20}

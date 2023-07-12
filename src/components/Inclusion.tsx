@@ -20,7 +20,7 @@ export default function Inclusion() {
 
                 <button className="aboutButton">
                     <StaticImage
-                        src="../images/phone.png"
+                        src="../images/whatsapp.png"
                         alt="telefono fijo"
                         layout="fixed"
                         width={20}

@@ -53,7 +53,7 @@ export default function Header() {
                 </div>
 
                 <div className="headerLogo">
-                    <a href="">
+                    <a href="" >
                         <StaticImage
                             src="../images/gvAzul.png"
                             alt="telefono fijo"

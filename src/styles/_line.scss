@@ -7,6 +7,11 @@
     background-color: #222222;
     align-items: center;
 
+    
+    @media screen and (max-width:820px) {
+        flex-direction: column;
+    }
+    
     .linesTitles{
         width: 50rem;
         .linesTitle{
@@ -14,7 +19,21 @@
             font-weight: lighter;
             font-size: 6rem;
             margin: 0;
+            @media screen and (max-width:820px) {
+              font-size: 3rem;
+            }
         }
+        @media screen and (max-width:820px) {
+          width: auto;
+        }
+    }
+    @media screen and (max-width:820px) {
+      .linesTitle{
+        width: auto;
+        .linesTitle{
+          font-size: 4rem;
+        }
+      }
     }
     
     .linesContent {
@@ -25,13 +44,22 @@
       align-items: center;
       margin-right: 15rem;
         
+      @media screen and (max-width:820px) {
+        overflow-x: auto;
+        width: 110%;
+        margin: 0;
+      }
       .lineCard {
         height: 50rem;
         width: 450px;
         display: flex;
         justify-content: center;
         position: absolute;
-  
+        
+        @media screen and (max-width:820px) {
+          width: 25rem;
+          height: 40rem;  
+        }
         .cardTitle {
           font-size: 4rem;
           font-weight: lighter;
@@ -46,22 +74,42 @@
       .lineCard:nth-child(1) {
         left: 38%;
         transform: translateX(-50%);
+         
+        @media screen and (max-width:820px) {
+          left: 5%;
+          transform: translateX(10%);
+        }
       }
   
       .lineCard:nth-child(2) {
         left: 45%;
         transform: translateX(-13%);
+        @media screen and (max-width:820px) {
+          transform: translateX(70%);
+          left: 20%;
+        }
       }
   
       .lineCard:nth-child(3) {
         left: 65%;
         transform: translateX(-13%);
+        @media screen and (max-width:820px) {
+          transform: translateX(135%);
+          left: 30%;
+        }
       }
   
       .lineCard:nth-child(4) {
         left: 85%;
         transform: translateX(-13%);
+        @media screen and (max-width:820px) { 
+          transform: translateX(140%);
+          left: 100%;
+        }
       }
+    }
+    @media screen and (max-width:820px) {
+      width: 100%;
     }
   }
   

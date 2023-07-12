@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
+import "../styles/global.scss" 
 
 const SandwichMenu: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -24,14 +25,15 @@ const SandwichMenu: React.FC = () => {
 
     return (
         <div><button onClick={handleMenuClick}>   <StaticImage
-            src="../images/menu.webp"
+            src="../images/menu.png"
             alt="telefono fijo"
             layout="fixed"
             width={20}
             height={20}
             formats={['auto', 'webp', 'avif']}
             imgStyle={{ objectFit: 'cover' }}
-        />  </button>
+          
+        /></button>
 
 
             {isOpen && (

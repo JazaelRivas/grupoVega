@@ -164,7 +164,7 @@ export default function Promos() {
 
       <button className="promosButton">
         <StaticImage
-          src="../images/phone.png"
+          src="../images/whatsapp.png"
           alt="telefono fijo"
           layout="fixed"
           width={20}

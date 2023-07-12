@@ -13,7 +13,7 @@ export default function Trend() {
                 imgStyle={{ objectFit: 'fill' }}
                 class="trendImage"
             />
-            <div className="trendsContainerButton">
+            <div className="">
                 <button className="trendsButton">
                     <StaticImage
                         src="../images/phone.png"
