@@ -13,20 +13,15 @@ export default function Trend() {
                 imgStyle={{ objectFit: 'fill' }}
                 class="trendImage"
             />
-            <div className="">
-                <button className="trendsButton">
-                    <StaticImage
-                        src="../images/phone.png"
-                        alt="telefono fijo"
-                        layout="fixed"
-                        width={20}
-                        height={20}
-                        formats={['auto', 'webp', 'avif']}
-                        imgStyle={{ objectFit: 'fill' }}
-                        className="paddingAbout"
-                    />
-                    Contactanos y cotiza!
-                </button>
+            <div className="mobileTrend">
+                <StaticImage
+                    src="../images/mobileTrend.png"
+                    alt="telefono fijo"
+                    layout="constrained"
+                    formats={['auto', 'webp', 'avif']}
+                    imgStyle={{ objectFit: 'fill' }}
+                   
+                />
             </div>
         </div>
     )

@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-
+  
   .promosTitle {
     font-size: clamp(3rem, 5vw, 7rem);
     font-weight: lighter;
@@ -46,6 +46,9 @@
       }
     }
   }
+  @media screen and (max-height:1400px)  {
+    padding: 5rem;
+  }
 
   .promoCards {
     display: flex;
@@ -79,6 +82,9 @@
       object-fit: contain;
       overflow: hidden;
       /* Add this line to hide overflow caused by backdrop-filter */
+       @media (max-height:1400px) and (max-width:800px) {
+          .promoCard{}
+       }
     }
 
     .promoCard h3 {
@@ -271,4 +277,17 @@
     }
   }
   
+}
+
+@media (max-width:1300px) and (max-height:800px) {
+  .mainPromos{
+    height: auto;
+    margin: 5rem;
+  }
+}
+@media  (max-width:800px) {
+  .mainPromos{
+    height: auto;
+    margin: 0;
+  }
 }
