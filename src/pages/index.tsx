@@ -1,6 +1,6 @@
 import React from "react"
 import "./main.scss"
-import { Header, Hub, About, Promos, Brands, Services , Lines , Trend , Inclusion ,  } from "../components";
+import { Header, Hub, About, Promos, Brands, Services , Lines , Trend , Inclusion , Location } from "../components";
 import { Link, Element, animateScroll as scroll } from "react-scroll";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -29,6 +29,7 @@ export default function Index() {
       <Trend />
       </Element>
       <Inclusion/>
+      <Location/>
       <a href="/" className="staticWhatsapp">
         <StaticImage
           src="../images/whatsapp.png"

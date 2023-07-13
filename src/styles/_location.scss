@@ -1,0 +1,41 @@
+.mainLocation{
+    height: 100dvh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: white;
+    padding:  5vh;
+    .locationTitle{
+        font-weight: lighter;
+        font-size: 6rem;
+        text-align: start;
+    }
+
+    .locationContent{
+        display: flex;
+        justify-content: space-between;
+
+        .locationLinks{
+            width: 40rem;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 5rem;
+            margin: 10vh;
+            color: black;
+            h2{
+                color: black;
+            }
+            .locationLink{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+            }
+        }   
+    }
+}

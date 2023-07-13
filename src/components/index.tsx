@@ -8,7 +8,7 @@ import Services from "./Services";
 import Lines from "./Lines";
 import Trend from "./Trend";
 import Inclusion from "./Inclusion";
- 
+import Location from "./Location";
 export {
     Header,
     Hub,
@@ -19,5 +19,6 @@ export {
     Services,
     Lines,
     Trend,
-    Inclusion
+    Inclusion,
+    Location
 }
