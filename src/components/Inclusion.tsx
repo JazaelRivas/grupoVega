@@ -23,23 +23,21 @@ export default function Inclusion() {
                 /></div>
             </div>
             <div className="aboutText">
-                <h2 className="aboutTitle">Quiénes somos.</h2>
+                <h2 className="aboutTitle">Viaja seguro</h2>
                 <div className="aboutContent">
-                    <h3 className="aboutFont">Llevamos orgullosamente 30 años brindando un servicio excepcional a nuestra comunidad.
-                        Nos hemos convertido en tu llantera de confianza, siempre dispuestos a ofrecerte la mejor experiencia en el cuidado de tus llantas.
+                    <h3 className="aboutFont">En estas vacaciones, no comprometas la seguridad de tus seres queridos. Nuestros centros de servicio ofrecen llantas de calidad y expertos en revisión de seguridad para que disfrutes de un viaje sin preocupaciones. 
+                    Confía en nosotros para brindarte servicios confiables y productos de primera para tu vehículo.
                     </h3>
                 </div>
 
                 <button className="aboutButton">
                     <StaticImage
-                        src="../images/whatsapp.png"
+                        src="../images/whatsapp1.png"
                         alt="telefono fijo"
-                        layout="fixed"
-                        width={20}
-                        height={20}
+                        layout="constrained"
                         formats={['auto', 'webp', 'avif']}
                         imgStyle={{ objectFit: 'fill' }}
-                        className="paddingAbout"
+                        className="aboutButtonWhatsapp"
                     />
                     Contactanos y cotiza!
                 </button>

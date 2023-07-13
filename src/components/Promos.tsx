@@ -38,7 +38,7 @@ export default function Promos() {
 
   return (
     <div className="mainPromos">
-      <h2 className="promosTitle">El cuidado total de tu auto.  <p className="promosSubtitle">Todo lo que necesitas en un mismo lugar.</p></h2>
+      <h2 className="promosTitle">El cuidado total de tu auto<p className="promosSubtitle">Todo lo que necesitas en un mismo lugar.</p></h2>
 
       {showCarousel ? (
         <Slider className="sliderPromo" {...settings}>
@@ -164,13 +164,12 @@ export default function Promos() {
 
       <button className="promosButton">
         <StaticImage
-          src="../images/whatsapp.png"
+          src="../images/whatsapp1.png"
           alt="telefono fijo"
-          layout="fixed"
-          width={20}
-          height={20}
+          layout="constrained"
           formats={["auto", "webp", "avif"]}
           imgStyle={{ objectFit: "cover" }}
+          className='aboutButtonWhatsapp'
         />
         Contactanos y cotiza!
       </button>

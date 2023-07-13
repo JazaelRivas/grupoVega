@@ -54,7 +54,8 @@
                     padding: 1rem;
                     margin: 0;
                     gap: 0rem;
-
+                    
+                    
                     .paddingAbout {
                         margin-left: 2rem;
                         padding: 1rem;
@@ -110,7 +111,12 @@
     color: white;
     font-weight: bold;
     font-size: 2rem;
-
+    .aboutButtonWhatsapp{
+        width: 3rem;
+        .gatsby-image-wrapper{
+            width: 4rem;
+        }
+    }
     @media screen and (max-height:600px) {
         margin: 5rem 3vw 2rem;
     }
@@ -190,6 +196,17 @@
     }
     
 }
+
+@media (max-width:1300px) and (max-height:700px) {
+    .aboutImage{
+        height: auto;
+        .paralelImage{
+            width: 35rem;
+            height: 40rem;
+        }
+    }
+}
+
 @media (max-width:700px) {
     .aboutImage{
         height: auto;
@@ -208,4 +225,11 @@
             transform: translateX(0%);
         }
     }   
+}
+
+.aboutButtonWhatsapp{
+    width: 4rem;
+    .gatsby-image-wrapper{
+        width: 4rem;
+    }
 }

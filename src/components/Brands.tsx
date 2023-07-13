@@ -5,7 +5,7 @@ import "../styles/global.scss"
 export default function Brands() {
     return (
         <div className="mainBrands">
-            <h2 className="brandsTitle">Las Marcas que Nos Representan.</h2>
+            <h2 className="brandsTitle">Las Marcas que Nos Representan</h2>
             <div className="brandsContent">
                 <StaticImage
                     src="../images/brands.png"

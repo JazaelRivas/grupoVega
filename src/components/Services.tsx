@@ -6,7 +6,7 @@ import "../styles/global.scss"
 export default function Services() {
     return (
         <div className="mainServices">
-            <h2 className="servicesTitle">Servicios.</h2>
+            <h2 className="servicesTitle">Servicios</h2>
             <h3 className="servicesSubtitle">Viaja con confianza y seguridad en cada camino, gracias a nuestros servicios especializados.</h3>
             <div className="servicesContent">
                 <div className="serviceCard">

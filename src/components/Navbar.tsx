@@ -105,21 +105,19 @@ export default function Navbar({ scrollToSection }: NavbarProps) {
                     Servicios
                 </Link>
                 <Link
-                    to="section-about"
+                    to="section-trending"
                     spy={true}
                     smooth={true}
                     duration={250}
                     className="hubFont"
-                    onClick={() => handleScrollToSection("section-about")}
+                    onClick={() => handleScrollToSection("section-trending")}
                 >
-                    Ubicanos
+                    Trending🔥 
                 </Link>
                 <a href="">  <StaticImage
                     src="../images/location.png"
                     alt="Logo Grupo Vega Amarillo"
-                    layout="fixed"
-                    width={40}
-                    height={40}
+                    layout="constrained"
                     formats={["auto", "webp", "avif"]}
                     imgStyle={{ objectFit: "cover" }}
                     className="hubContact"
@@ -127,9 +125,7 @@ export default function Navbar({ scrollToSection }: NavbarProps) {
                 <a href="">  <StaticImage
                     src="../images/whatsapp.png"
                     alt="Logo Grupo Vega Amarillo"
-                    layout="fixed"
-                    width={40}
-                    height={40}
+                    layout="constrained"
                     formats={["auto", "webp", "avif"]}
                     imgStyle={{ objectFit: "cover" }}
                     className="hubContact"

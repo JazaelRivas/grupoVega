@@ -7,7 +7,7 @@ export default function Lines() {
         <div className="mainLine">
             <div className="linesTitles">
                 <h2 className="linesTitle">LIneas de Llantas</h2>
-                <button></button>
+                <p>Para todo lo que necesites</p>
             </div>
             <div className="linesContent">
                 <div className="lineCard">

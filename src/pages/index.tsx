@@ -25,15 +25,15 @@ export default function Index() {
         <Services />
       </Element>
       <Lines/>
-      <Trend/>
+      <Element name="section-trending" className="section">
+      <Trend />
+      </Element>
       <Inclusion/>
       <a href="/" className="staticWhatsapp">
         <StaticImage
           src="../images/whatsapp.png"
           alt="contacto whatsapp"
-          layout="fixed"
-          width={50}
-          height={50}
+          layout="constrained"
           formats={['auto', 'webp', 'avif']}
           imgStyle={{ objectFit: 'cover' }}
         />

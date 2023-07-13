@@ -29,9 +29,7 @@
 
         &.scrolled {
             background-color: white;
-            .gatsby-image-wrapper{
-                margin-top: 1rem;
-            }
+            
             .NavbarPhotoBlue{
                 width: 60px;
                 height: 60px;
@@ -220,6 +218,7 @@
 
     .hubContact {
         display: block;
+        width: 4rem;
     }
 
     /* Additional styles for the scrolled state */
