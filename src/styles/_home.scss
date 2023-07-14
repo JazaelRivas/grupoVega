@@ -3,7 +3,8 @@
     flex-direction: column;
     width: 100%;
     height: auto;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     background-color: #004EA8;
 
     .staticWhatsapp{

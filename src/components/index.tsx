@@ -9,6 +9,7 @@ import Lines from "./Lines";
 import Trend from "./Trend";
 import Inclusion from "./Inclusion";
 import Location from "./Location";
+import Navbar from "./Navbar";
 export {
     Header,
     Hub,
@@ -20,5 +21,6 @@ export {
     Lines,
     Trend,
     Inclusion,
-    Location
+    Location,
+    Navbar
 }
