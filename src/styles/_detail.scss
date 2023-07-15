@@ -1,0 +1,115 @@
+.mainDetail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .backgroundContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../images/detail.jpg');
+        background-size: cover;
+        background-position: center -75%;
+        width: 100%;
+        height: 40rem;
+
+        .title {
+            text-align: center;
+            color: white;
+            font-size: 4rem;
+            font-weight: lighter;
+
+        }
+    }
+
+    .alineacion {
+        width: 100%;
+        display: flex;
+
+        .alineacionTitle {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h2{
+                margin: 0;
+            }
+            h3{
+                text-align: justify;
+            }
+            padding: 1rem;
+        }
+
+        .boton{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            background-color: #25D366;
+            padding: 1.5rem;
+            border-radius: 4rem;
+            color: white;
+            font-size: 2rem;
+        }
+        .buttonImage {
+            width: 3rem;
+        }
+
+        .detailImage {
+            width: 50%;
+        }
+       
+        @media screen and (max-width:800px) {
+            flex-direction: column;
+            gap: 2rem;
+            h3{
+                padding: 2rem;
+            }
+            .alineacionTitle{
+                width: auto;
+            }
+            .detailImage{
+                width: auto;
+            }
+            .boton{
+                font-size: 1.5rem;
+            }
+            .buttonImage{
+                width: 2rem;
+            }
+        }
+       
+    }
+   
+    .alineacion:nth-child(3){
+        flex-direction: row-reverse;
+    }
+    @media screen and (max-width:800px) {
+        .alineacion:nth-child(3){
+            flex-direction: column;
+        .alineacionTitle{
+            width: auto;
+        }
+        .detailImage{
+            width: auto;
+        }
+        }
+    }
+    .alineacion:nth-child(5){
+        flex-direction: row-reverse;
+    }
+    @media screen and (max-width:800px) {
+        .alineacion:nth-child(5){
+            flex-direction: column;
+        .alineacionTitle{
+            width: auto;
+        }
+        .detailImage{
+            width: auto;
+        }
+        }
+    }
+    
+}
+

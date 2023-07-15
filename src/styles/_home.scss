@@ -7,26 +7,27 @@
     overflow-x: hidden;
     background-color: #004EA8;
 
-    .staticWhatsapp{
-        width: 6rem;
-        position: fixed;
-        margin: 91vh 96% ;
-        z-index: 5;
-    }
-    @media (max-width:1300px) and (max-height:700px) {
-        .staticWhatsapp{
-            margin: 90vh 95%;
-        }
-    }
-    @media screen and (max-width:820px) {
-        .staticWhatsapp{
-            width: 5rem;
-            position: fixed;
-            margin: 90vh 85% ;
-        }
-    }
     
 }
+.staticWhatsapp{
+    width: 6rem;
+    position: fixed;
+    margin: 91vh 96% ;
+    z-index: 5;
+}
+@media (max-width:1300px) and (max-height:700px) {
+    .staticWhatsapp{
+        margin: 90vh 95%;
+    }
+}
+@media screen and (max-width:820px) {
+    .staticWhatsapp{
+        width: 5rem;
+        position: fixed;
+        margin: 90vh 85% ;
+    }
+}
+
 @supports (--moz-context-properties: position) {
     .staticWhatsapp {
         /* Your Firefox Developer Edition-specific styles here */
