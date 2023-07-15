@@ -8,7 +8,7 @@ export default function Detail() {
             <div className='backgroundContainer'>
                 <h2 className='title'>Servicios</h2>
                 <StaticImage
-                        src="../images/detail.jpg"
+                        src="../images/IMG_3806.jpg"
                         alt="telefono fijo"
                         layout="constrained"
                         formats={['auto', 'webp', 'avif']}
@@ -29,7 +29,7 @@ export default function Detail() {
                     />Contacta y Cotiza!</button>
                 </div>
                 <StaticImage
-                    src="../images/blog1.jpg"
+                    src="../images/IMG_3666.jpg"
                     alt="telefono fijo"
                     layout="constrained"
                     formats={['auto', 'webp', 'avif']}
