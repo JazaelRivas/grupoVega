@@ -7,6 +7,13 @@ export default function Detail() {
         <div className='mainDetail'>
             <div className='backgroundContainer'>
                 <h2 className='title'>Servicios</h2>
+                <StaticImage
+                        src="../images/detail.jpg"
+                        alt="telefono fijo"
+                        layout="constrained"
+                        formats={['auto', 'webp', 'avif']}
+                        className="headerImage"
+                    />
             </div>
 
             <div className='alineacion'>

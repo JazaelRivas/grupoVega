@@ -7,20 +7,30 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url('../images/detail.jpg');
-        background-size: cover;
-        background-position: center -75%;
         width: 100%;
         height: 40rem;
-
-        .title {
-            text-align: center;
-            color: white;
-            font-size: 4rem;
-            font-weight: lighter;
-
-        }
+        position: relative;
+        overflow: hidden; /* Ensure image content is clipped within the container */
     }
+    
+    .headerImage {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -65%); /* Center the image */
+    }
+    
+    .title {
+        position: relative;
+        text-align: center;
+        color: white;
+        font-size: 4rem;
+        font-weight: lighter;
+        z-index: 1;
+    }
+    
 
     .alineacion {
         width: 100%;
@@ -32,16 +42,19 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            h2{
+
+            h2 {
                 margin: 0;
             }
-            h3{
+
+            h3 {
                 text-align: justify;
             }
+
             padding: 1rem;
         }
 
-        .boton{
+        .boton {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -52,6 +65,7 @@
             color: white;
             font-size: 2rem;
         }
+
         .buttonImage {
             width: 3rem;
         }
@@ -59,57 +73,68 @@
         .detailImage {
             width: 50%;
         }
-       
+
         @media screen and (max-width:800px) {
             flex-direction: column;
             gap: 2rem;
-            h3{
+
+            h3 {
                 padding: 2rem;
             }
-            .alineacionTitle{
+
+            .alineacionTitle {
                 width: auto;
             }
-            .detailImage{
+
+            .detailImage {
                 width: auto;
             }
-            .boton{
+
+            .boton {
                 font-size: 1.5rem;
             }
-            .buttonImage{
+
+            .buttonImage {
                 width: 2rem;
             }
         }
-       
-    }
-   
-    .alineacion:nth-child(3){
-        flex-direction: row-reverse;
-    }
-    @media screen and (max-width:800px) {
-        .alineacion:nth-child(3){
-            flex-direction: column;
-        .alineacionTitle{
-            width: auto;
-        }
-        .detailImage{
-            width: auto;
-        }
-        }
-    }
-    .alineacion:nth-child(5){
-        flex-direction: row-reverse;
-    }
-    @media screen and (max-width:800px) {
-        .alineacion:nth-child(5){
-            flex-direction: column;
-        .alineacionTitle{
-            width: auto;
-        }
-        .detailImage{
-            width: auto;
-        }
-        }
-    }
-    
-}
 
+    }
+
+    .alineacion:nth-child(3) {
+        flex-direction: row-reverse;
+    }
+
+    @media screen and (max-width:800px) {
+        .alineacion:nth-child(3) {
+            flex-direction: column;
+
+            .alineacionTitle {
+                width: auto;
+            }
+
+            .detailImage {
+                width: auto;
+            }
+        }
+    }
+
+    .alineacion:nth-child(5) {
+        flex-direction: row-reverse;
+    }
+
+    @media screen and (max-width:800px) {
+        .alineacion:nth-child(5) {
+            flex-direction: column;
+
+            .alineacionTitle {
+                width: auto;
+            }
+
+            .detailImage {
+                width: auto;
+            }
+        }
+    }
+
+}
