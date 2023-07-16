@@ -5,18 +5,10 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 export default function Blog() {
   return (
-    <div>
-
+    <>
+      <Header />
       <Detail />
-      <a href="/" className="staticWhatsapp">
-        <StaticImage
-          src="../images/whatsapp.png"
-          alt="contacto whatsapp"
-          layout="constrained"
-          formats={['auto', 'webp', 'avif']}
-          imgStyle={{ objectFit: 'cover' }}
-        />
-      </a>
-    </div>
+      
+    </>
   );
 }

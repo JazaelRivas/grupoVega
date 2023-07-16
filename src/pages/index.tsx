@@ -1,8 +1,9 @@
 import React from "react"
 import "./main.scss"
-import { Header, Hub, About, Promos, Brands, Services , Lines , Trend , Inclusion , Location } from "../components";
+import { Header, Hub, About, Promos, Brands, Services, Lines, Trend, Inclusion, Location } from "../components";
 import { Link, Element, animateScroll as scroll } from "react-scroll";
 import { StaticImage } from "gatsby-plugin-image";
+import ScrollToTopButton from "../components/ScrollToTop";
 
 export default function Index() {
 
@@ -24,21 +25,26 @@ export default function Index() {
       <Element name="section-services" className="section">
         <Services />
       </Element>
-      <Lines/>
+      <Lines />
       <Element name="section-trending" className="section">
-      <Trend />
+        <Trend />
       </Element>
-      <Inclusion/>
-      <Location/>
-      <a href="/" className="staticWhatsapp">
-        <StaticImage
-          src="../images/whatsapp.png"
-          alt="contacto whatsapp"
-          layout="constrained"
-          formats={['auto', 'webp', 'avif']}
-          imgStyle={{ objectFit: 'cover' }}
-        />
-      </a>
+      <Inclusion />
+
+      <Element name="section-trending" className="section">
+        <Location />
+      </Element>
+
+        <a href="/" className="staticWhatsapp">
+          <StaticImage
+            src="../images/whatsapp.png"
+            alt="contacto whatsapp"
+            layout="constrained"
+            formats={['auto', 'webp', 'avif']}
+            imgStyle={{ objectFit: 'cover' }}
+          />
+        </a>
+        <ScrollToTopButton />
     </div>
   );
 }

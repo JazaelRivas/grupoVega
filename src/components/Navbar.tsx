@@ -72,7 +72,7 @@ export default function Navbar({ scrollToSection }: NavbarProps) {
                     className="hubFont"
                     onClick={() => handleScrollToSection("section-about")}
                 >
-                Nosotros
+                    Nosotros
                 </Link>
                 <Link
                     to="section-promos"
@@ -112,16 +112,23 @@ export default function Navbar({ scrollToSection }: NavbarProps) {
                     className="hubFont"
                     onClick={() => handleScrollToSection("section-trending")}
                 >
-                    Trending🔥 
+                    Trending🔥
                 </Link>
-                <a href="">  <StaticImage
-                    src="../images/location.png"
-                    alt="Logo Grupo Vega Amarillo"
-                    layout="constrained"
-                    formats={["auto", "webp", "avif"]}
-                    imgStyle={{ objectFit: "cover" }}
-                    className="hubContact"
-                /></a>
+                <Link
+                    to="section-trending"
+                    spy={true}
+                    smooth={true}
+                    duration={250}
+                    className="hubFont"
+                    onClick={() => handleScrollToSection("section-trending")}
+                >  <StaticImage
+                        src="../images/location.png"
+                        alt="Logo Grupo Vega Amarillo"
+                        layout="constrained"
+                        formats={["auto", "webp", "avif"]}
+                        imgStyle={{ objectFit: "cover" }}
+                        className="hubContact"
+                    /></Link>
                 <a href="">  <StaticImage
                     src="../images/whatsapp.png"
                     alt="Logo Grupo Vega Amarillo"

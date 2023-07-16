@@ -1,5 +1,6 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "gatsby";
 import "../styles/global.scss"
 
 
@@ -19,7 +20,7 @@ export default function Services() {
                     />
                     <h3>Suspension.</h3>
                     <p>Ningún camino será rival para tu auto. Te ofrecemos lo mejor para la suspensión de tu vehículo.</p>
-                    <button className="servicesButton">
+                    <Link to="/blog" className="servicesButton" >
                         <StaticImage
                             src="../images/tyre.png"
                             alt="telefono fijo"
@@ -29,7 +30,7 @@ export default function Services() {
                             className="serviceImageButton"
                         />
                         Ver más
-                    </button>
+                    </Link>
                 </div>
                 <div className="serviceCard">
                     <StaticImage
@@ -41,7 +42,7 @@ export default function Services() {
                     />
                     <h3>Alineacion y Balanceo.</h3>
                     <p>Le damos a tu auto el balance que necesita para llevarte tan lejos como quieras llegar.</p>
-                    <button className="servicesButton">
+                    <Link to="/blog" className="servicesButton">
                         <StaticImage
                             src="../images/tyre.png"
                             alt="telefono fijo"
@@ -51,7 +52,7 @@ export default function Services() {
                             className="serviceImageButton"
                         />
                         Ver más
-                    </button>
+                    </Link>
                 </div>
                 <div className="serviceCard">
                     <StaticImage
@@ -63,7 +64,7 @@ export default function Services() {
                     />
                     <h3>Llantas.</h3>
                     <p>Dejamos tus llantas al 100 para que sigas rodando con seguridad.</p>
-                    <button className="servicesButton">
+                    <Link to="/blog" className="servicesButton">
                         <StaticImage
                             src="../images/tyre.png"
                             alt="telefono fijo"
@@ -73,7 +74,7 @@ export default function Services() {
                             className="serviceImageButton"
                         />
                         Ver más
-                    </button>
+                    </Link>
                 </div>
                 <div className="serviceCard">
                     <StaticImage
@@ -85,7 +86,7 @@ export default function Services() {
                     />
                     <h3>Frenos.</h3>
                     <p>Nos aseguramos de que tus frenos jamás te fallen.</p>
-                    <button className="servicesButton">
+                    <Link to="/blog" className="servicesButton">
                         <StaticImage
                             src="../images/tyre.png"
                             alt="telefono fijo"
@@ -95,7 +96,7 @@ export default function Services() {
                             className="serviceImageButton"
                         />
                         Ver más
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>
