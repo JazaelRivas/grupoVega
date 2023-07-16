@@ -6,7 +6,7 @@ const VideoComponent = () => {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 0.5; // Adjust the playback rate as desired
+      videoRef.current.playbackRate = 1; // Adjust the playback rate as desired
     }
   }, []);
 
