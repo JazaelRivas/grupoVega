@@ -12,7 +12,7 @@ const VideoComponent = () => {
 
   return (
     <div className='videoContainer'>
-      <video ref={videoRef} src="/static/video/video4k.mp4" className='videoSource' loop muted autoPlay>
+      <video ref={videoRef} src="/static/video/video4k.mp4" className='videoSource' loop muted autoPlay >
         Your browser does not support the video tag.
       </video>
       <h2 className='videoTitle'>

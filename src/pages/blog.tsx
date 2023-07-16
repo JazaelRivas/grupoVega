@@ -1,11 +1,12 @@
 import React from 'react';
+import "./main.scss"
 import { Header, Detail } from '../components';
 import { StaticImage } from 'gatsby-plugin-image';
-import "./main.scss"
+
 export default function Blog() {
   return (
     <div>
-      <Header />
+
       <Detail />
       <a href="/" className="staticWhatsapp">
         <StaticImage
