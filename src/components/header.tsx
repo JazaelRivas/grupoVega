@@ -2,8 +2,17 @@ import React from "react"
 import "../styles/global.scss"
 import { StaticImage } from "gatsby-plugin-image"
 import SandwichMenu from "./SandwichMenu"
-
+import { Link, Element, animateScroll as scroll } from "react-scroll";
 export default function Header() {
+
+    const handleScrollToSection = (sectionId: string) => {
+        scroll.scrollTo(Number(sectionId), {
+          duration: 1,
+          smooth: "easeInOutQuart",
+          offset: -70,
+        });
+      };
+
     return (
         <header className="mainHeader">
             <nav className="mainNav">
@@ -49,7 +58,7 @@ export default function Header() {
                 </div>
 
                 <div className="headerMenu">
-                    <SandwichMenu />
+                    <SandwichMenu scrollToSection={handleScrollToSection}/>
                 </div>
 
                 <div className="headerLogo">

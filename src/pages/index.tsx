@@ -25,26 +25,29 @@ export default function Index() {
       <Element name="section-services" className="section">
         <Services />
       </Element>
+
       <Lines />
-      <Element name="section-trending" className="section">
+
+      <Element name="section-trend" className="section">
         <Trend />
       </Element>
+
       <Inclusion />
 
-      <Element name="section-trending" className="section">
+      <Element name="section-location" className="section">
         <Location />
       </Element>
 
-        <a href="/" className="staticWhatsapp">
-          <StaticImage
-            src="../images/whatsapp.png"
-            alt="contacto whatsapp"
-            layout="constrained"
-            formats={['auto', 'webp', 'avif']}
-            imgStyle={{ objectFit: 'cover' }}
-          />
-        </a>
-        <ScrollToTopButton />
+      <a href="/" className="staticWhatsapp">
+        <StaticImage
+          src="../images/whatsapp.png"
+          alt="contacto whatsapp"
+          layout="constrained"
+          formats={['auto', 'webp', 'avif']}
+          imgStyle={{ objectFit: 'cover' }}
+        />
+      </a>
+      <ScrollToTopButton />
     </div>
   );
 }

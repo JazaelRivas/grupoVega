@@ -11,6 +11,7 @@ import Inclusion from "./Inclusion";
 import Location from "./Location";
 import Navbar from "./Navbar";
 import Detail from "./Detail";
+import DetailHeader from "./DetailHeader";
 export {
     Header,
     Hub,
@@ -24,5 +25,6 @@ export {
     Inclusion,
     Location,
     Navbar,
-    Detail
+    Detail,
+    DetailHeader
 }

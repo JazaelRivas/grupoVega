@@ -10,6 +10,7 @@ export default function Hub() {
         scroll.scrollTo(Number(sectionId), {
           duration: 1,
           smooth: "easeInOutQuart",
+          offset: -70,
         });
       };
     
@@ -22,9 +23,9 @@ export default function Hub() {
                     src="../images/image.webp"
                     alt="telefono fijo"
                     loading="lazy"
-                    layout="fixed"
+                    layout="constrained"
                     width={700}
-                    height={200}
+                    height={400}
                     formats={['auto', 'webp', 'avif']}
                     imgStyle={{ objectFit: 'fill' }}
                 />

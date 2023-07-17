@@ -1,6 +1,6 @@
 .mainHeader {
     display: flex;
-    
+
     .mainNav {
         display: flex;
         flex-direction: row;
@@ -9,25 +9,27 @@
         height: 5rem;
         background-color: #222222;
 
-      
+
         @media screen and (max-width: 820px) {
             position: fixed;
             z-index: 5;
             align-items: center;
-            height: 7rem;
+            height: 6rem;
             background-color: white;
             border-bottom: 2px solid #FFDF00;
             justify-content: normal;
         }
     }
 
-    .headerLogo{
+    .headerLogo {
         display: none;
+
         @media screen and (max-width:820px) {
             display: block;
-           margin-left: 33vw;
+            margin-left: 33vw;
         }
     }
+
     .headerContact {
         display: flex;
         justify-content: center;
@@ -80,32 +82,80 @@
             padding-right: 0;
             padding-left: 1rem;
         }
-        .headerMenuModal{
+
+        .headerMenuModal {
             position: absolute;
-            z-index: 10;;
+            z-index: 10;
+            ;
             top: -1%;
             left: 0;
             right: 0;
             bottom: 0;
             background-color: transparent;
-            height:105vh;
+            height: 105vh;
             width: 90%;
-            
-            .headerMenuContent{
-                position: static; 
-                z-index: 1;
+
+            .headerMenuContent {
+                position: static;
+                z-index: 5;
                 background-color: #222222;
                 height: 100%;
-                .headerMenuList{
+
+                .headerMenuList {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    padding-top: 5rem;
+                   
+
+                    .headerCloseButton {
+                         margin-left: 85%;
+                        .modaClose {
+                            filter: invert(41%) sepia(67%) saturate(4186%) hue-rotate(340deg) brightness(97%) contrast(98%);
+                            width: 4rem;
+                        }
+                    }
+                    .headerLogoLink{
+                        position: absolute;
+                        margin-top: 2rem;
+                        .headerMenuLogo{
+                            
+                            width: 6rem;
+                        }
+                    }
+                }
+
+                .modalLinks{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    margin-top: 3rem;
+                    overflow: auto;
+                    height: 90dvh;
+                    border-top: .5px solid grey;
+                    .modaLink{
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        font-size: 2rem;
+                        font-weight: lighter;
+                        padding: 1rem;
+                        text-align: start;
+                        .link{
+                            height: 2rem;
+                            width: 2rem;
+                            filter: invert(95%) sepia(3%) saturate(5%) hue-rotate(352deg) brightness(119%) contrast(100%);
+                        }
+                    }
+                    .modalFooter{
+                       
+                        text-align: center;
+                        color: white;
+                    }
                 }
             }
         }
-       
+
     }
 
     .headerFont {
@@ -113,18 +163,21 @@
         margin: .5rem 0;
     }
 
-    
-   
-}  .mobileLogo{
+
+
+}
+
+.mobileLogo {
     display: none;
 }
+
 @media screen and (max-width:820px) {
-    .mobileLogo{
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 10rem;
-            padding: 5rem;
+    .mobileLogo {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10rem;
+        padding: 5rem;
     }
-}   
+}

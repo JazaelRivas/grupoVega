@@ -105,22 +105,22 @@ export default function Navbar({ scrollToSection }: NavbarProps) {
                     Servicios
                 </Link>
                 <Link
-                    to="section-trending"
+                    to="section-trend"
                     spy={true}
                     smooth={true}
                     duration={250}
                     className="hubFont"
-                    onClick={() => handleScrollToSection("section-trending")}
+                    onClick={() => handleScrollToSection("section-trend")}
                 >
                     Trending🔥
                 </Link>
                 <Link
-                    to="section-trending"
+                    to="section-location"
                     spy={true}
                     smooth={true}
                     duration={250}
                     className="hubFont"
-                    onClick={() => handleScrollToSection("section-trending")}
+                    onClick={() => handleScrollToSection("section-location")}
                 >  <StaticImage
                         src="../images/location.png"
                         alt="Logo Grupo Vega Amarillo"

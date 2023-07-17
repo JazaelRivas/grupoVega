@@ -24,7 +24,7 @@ export default function Detail() {
             <div className='backgroundContainer'>
                 <h2 className='title'>Servicios</h2>
                 <StaticImage
-                    src="../images/3695.jpg"
+                    src="../images/detail2.jpg"
                     alt="telefono fijo"
                     layout="constrained"
                     formats={['auto', 'webp', 'avif']}
@@ -39,7 +39,7 @@ export default function Detail() {
                    <WhatsappButton pregunta={preguntaDinamica}/>
                 </div>
                 <StaticImage
-                    src="../images/IMG_3666.jpg"
+                    src="../images/alineado.jpg"
                     alt="telefono fijo"
                     layout="constrained"
                     formats={['auto', 'webp', 'avif']}
