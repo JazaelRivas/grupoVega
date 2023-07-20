@@ -24,11 +24,11 @@ export default function Detail() {
             <div className='backgroundContainer'>
                 <h2 className='title'>Servicios</h2>
                 <StaticImage
-                    src="../images/detail2.jpg"
+                    src="../images/detail2.png"
                     alt="telefono fijo"
                     layout="constrained"
                     formats={['auto', 'webp', 'avif']}
-                    className="headerImage"
+                    className='headerImage'
                 />
             </div>
 
@@ -36,7 +36,7 @@ export default function Detail() {
                 <div className='alineacionTitle'>
                     <h2>Alineación y Balanceo</h2>
                     <h3>Le damos a tu auto el balance que necesita para llevarte tan lejos como quieras llegar.</h3>
-                   <WhatsappButton pregunta={preguntaDinamica}/>
+                    <WhatsappButton pregunta={preguntaDinamica} />
                 </div>
                 <StaticImage
                     src="../images/alineado.jpg"
@@ -50,7 +50,7 @@ export default function Detail() {
                 <div className='alineacionTitle'>
                     <h2>Suspension</h2>
                     <h3>Ningún camino será rival para tu auto. Te ofrecemos lo mejor para la suspensión de tu vehículo.</h3>
-                    <WhatsappButton pregunta={preguntaDinamica1}/>
+                    <WhatsappButton pregunta={preguntaDinamica1} />
                 </div>
                 <StaticImage
                     src="../images/blog2.jpg"
@@ -64,7 +64,7 @@ export default function Detail() {
                 <div className='alineacionTitle'>
                     <h2>Llantas</h2>
                     <h3>Dejamos tus llantas al 100 para que sigas rodando con seguridad.</h3>
-                    <WhatsappButton pregunta={preguntaDinamica}/>
+                    <WhatsappButton pregunta={preguntaDinamica} />
                 </div>
                 <StaticImage
                     src="../images/blog5.jpg"
@@ -79,7 +79,7 @@ export default function Detail() {
                 <div className='alineacionTitle'>
                     <h2>Frenos</h2>
                     <h3>Nos aseguramos de que tus frenos jamás te fallen.</h3>
-                    <WhatsappButton pregunta={preguntaDinamica}/>
+                    <WhatsappButton pregunta={preguntaDinamica} />
                 </div>
                 <StaticImage
                     src="../images/blog4.jpg"
@@ -89,7 +89,7 @@ export default function Detail() {
                     className="detailImage"
                 />
             </div>
-            <ScrollToTopButton/>
+            <ScrollToTopButton />
         </div>
     );
 }

@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: auto;
     h2{
         font-weight: lighter;
     }
@@ -12,23 +13,45 @@
         width: 100%;
         height: 40rem;
         position: relative;
-        overflow: hidden; /* Ensure image content is clipped within the container */
+      
         @media screen and (max-width:800px) {
             height: auto;
             margin-top: 7rem;
         }
+        .headerImage {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 36%;
+            left: 50%;
+            transform: translate(-50%, -37%); /* Center the image */
+            filter: brightness(0.7);
+           
+        }
+        .gatsby-image-wrapper img {
+            bottom: 0;
+            height: 100%;
+            left: 0;
+            margin: 0;
+            max-width: none;
+            padding: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+            object-fit: cover;
+            object-position: 0 29%;
+        }
+        @media screen and (max-width:800px) {
+          height: 30rem;
+          .gatsby-image-wrapper img{
+            object-position: center;
+          }
+        }
     }
     
     
-    .headerImage {
-        width: 100%;
-        height: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -36%); /* Center the image */
-        filter: brightness(0.7);
-    }
+  
     
     .title {
         position: relative;
