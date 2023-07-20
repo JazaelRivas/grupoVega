@@ -25,5 +25,12 @@ module.exports = {
         icon: `src/images/gvAmarillo.png`, // Replace with the path to your custom favicon file
       },
     },
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaultQuality: 85, // Adjust the image quality here
+        formats: ['auto', 'webp', 'avif'], // Use modern image formats
+      },
+    },
   ],
 }

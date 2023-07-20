@@ -39,7 +39,7 @@ export default function Detail() {
                     <WhatsappButton pregunta={preguntaDinamica} />
                 </div>
                 <StaticImage
-                    src="../images/alineado.jpg"
+                    src="../images/3667.png"
                     alt="telefono fijo"
                     layout="constrained"
                     formats={['auto', 'webp', 'avif']}
@@ -64,7 +64,7 @@ export default function Detail() {
                 <div className='alineacionTitle'>
                     <h2>Llantas</h2>
                     <h3>Dejamos tus llantas al 100 para que sigas rodando con seguridad.</h3>
-                    <WhatsappButton pregunta={preguntaDinamica} />
+                    <WhatsappButton pregunta={preguntaDinamica2} />
                 </div>
                 <StaticImage
                     src="../images/blog5.jpg"
@@ -79,7 +79,7 @@ export default function Detail() {
                 <div className='alineacionTitle'>
                     <h2>Frenos</h2>
                     <h3>Nos aseguramos de que tus frenos jamás te fallen.</h3>
-                    <WhatsappButton pregunta={preguntaDinamica} />
+                    <WhatsappButton pregunta={preguntaDinamica3} />
                 </div>
                 <StaticImage
                     src="../images/blog4.jpg"
