@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from "gatsby"
 
-import WhatsappButton from './Button';
+import WhatsappButton from './WhatsappButton';
 import "../styles/global.scss"
 
 interface NavbarProps {

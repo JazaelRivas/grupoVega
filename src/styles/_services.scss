@@ -1,4 +1,4 @@
-.mainServices{
+.mainServices {
     height: 100dvh;
     width: auto;
     background-color: white;
@@ -7,48 +7,56 @@
     @media (max-width:1400px) and (max-height:600px) {
         height: auto;
     }
+
     @media screen and (max-width:820px) {
         height: 110dvh;
         padding: 5vh;
     }
 
-    @media (min-height:700px) and (max-height:800px){ 
+    @media (min-height:700px) and (max-height:800px) {
         height: 150dvh;
         padding: 5vh;
     }
-    @media (min-height:571px) and (max-height:700px){ 
+
+    @media (min-height:571px) and (max-height:700px) {
         height: 140dvh;
         padding: 5vh;
     }
+
     @media (max-height:570px) and (max-width:321px) {
         height: 165dvh;
         padding: 5vh;
     }
-    
-    .servicesTitle{
+
+    .servicesTitle {
         font-size: 6rem;
         font-weight: lighter;
         margin: 1rem 0 .1rem 0;
+
         @media screen and (max-width:820px) {
             font-size: 3rem;
         }
     }
-    .servicesSubtitle{
+
+    .servicesSubtitle {
         text-align: end;
         font-weight: lighter;
+
         @media screen and (max-width:820px) {
             text-align: start;
         }
     }
-    .servicesContent{
-        margin-top:5vh;
+
+    .servicesContent {
+        margin-top: 5vh;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         height: auto;
         width: 100%;
         height: 55rem;
-        .serviceCard{
+
+        .serviceCard {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -57,33 +65,39 @@
             padding: 1rem;
             border-radius: 3rem;
             transition: 0.3s;
-            h3{
+
+            h3 {
                 font-weight: bold;
             }
-            .servicesImage{
+
+            .servicesImage {
                 width: 100%;
                 height: 250px;
                 align-items: center;
             }
         }
-        .serviceCard:hover{
+
+        .serviceCard:hover {
             background-color: #D3D3D3;
         }
 
         @media screen and (max-width:820px) {
             display: grid;
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
             column-gap: 2rem;
             margin-top: 5rem;
-            h3{
+
+            h3 {
                 font-size: 1.5rem;
             }
-            .serviceCard{
+
+            .serviceCard {
                 background-color: #D3D3D3;
                 width: 40dvw;
                 font-size: 1rem;
-                .servicesImage{
+
+                .servicesImage {
                     margin: 0 auto;
                     height: 80px;
                     width: 80px;
@@ -91,7 +105,8 @@
             }
         }
     }
-    .servicesButton{
+
+    .servicesButton {
         color: black;
         display: flex;
         align-items: center;
@@ -103,31 +118,34 @@
         font-size: 2rem;
         font-weight: bold;
         transition: .5s;
-        .serviceImageButton{
+
+        .serviceImageButton {
             position: absolute;
             left: 2rem;
         }
+
         @media screen and (max-width:820px) {
-           
-                font-size: 1.5rem;
-            
+
+            font-size: 1.5rem;
+
         }
-        
-    .servicesButton:hover{
-        background-color: white;
-        .serviceImageButton{
-            rotate: 90deg;
+
+        .servicesButton:hover {
+            background-color: white;
+
+            .serviceImageButton {
+                rotate: 90deg;
+            }
         }
-    }
-  
-    
+
+
     }
 }
 
 @media screen and (max-width:820px) {
 
-        .serviceImageButton{
-            display: none;
-        } 
-     
+    .serviceImageButton {
+        display: none;
+    }
+
 }

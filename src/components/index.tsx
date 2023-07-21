@@ -12,6 +12,7 @@ import Location from "./Location";
 import Navbar from "./Navbar";
 import Detail from "./Detail";
 import DetailHeader from "./DetailHeader";
+import WhatsappButton from "./WhatssappMenu";
 export {
     Header,
     Hub,
@@ -26,5 +27,6 @@ export {
     Location,
     Navbar,
     Detail,
-    DetailHeader
+    DetailHeader,
+    WhatsappButton
 }

@@ -1,6 +1,6 @@
 import React from "react"
 import "./main.scss"
-import { Header, Hub, About, Promos, Brands, Services, Lines, Trend, Inclusion, Location } from "../components";
+import { Header, Hub, About, Promos, Brands, Services, Lines, Trend, Inclusion, Location , WhatsappButton } from "../components";
 import { Link, Element, animateScroll as scroll } from "react-scroll";
 import { StaticImage } from "gatsby-plugin-image";
 import ScrollToTopButton from "../components/ScrollToTop";
@@ -38,15 +38,7 @@ export default function Index() {
         <Location />
       </Element>
 
-      <a href="/" className="staticWhatsapp">
-        <StaticImage
-          src="../images/whatsapp.png"
-          alt="contacto whatsapp"
-          layout="constrained"
-          formats={['auto', 'webp', 'avif']}
-          imgStyle={{ objectFit: 'cover' }}
-        />
-      </a>
+      <WhatsappButton/>
       <ScrollToTopButton />
     </div>
   );

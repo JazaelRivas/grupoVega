@@ -6,7 +6,7 @@ export default function Lines() {
     return (
         <div className="mainLine">
             <div className="linesTitles">
-                <h2 className="linesTitle">LIneas de Llantas</h2>
+                <h2 className="linesTitle">Líneas de Llantas</h2>
                 <p>Para todo lo que necesites</p>
             </div>
             <div className="linesContent">

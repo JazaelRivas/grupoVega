@@ -1,0 +1,141 @@
+/* DropdownItem.module.scss */
+
+.dropdownItem {
+
+
+  .dropdownContent {
+    /* Existing dropdown content styles remain unchanged */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+
+    /* New responsive styles for the dropdown content */
+    margin: 1rem 5vw;
+    padding: 1rem;
+
+    /* Adjust the max height based on screen size (example: 200px) */
+    @media screen and (max-width: 600px) {
+      max-height: 200px;
+    }
+
+    @media screen and (min-width: 601px) and (max-width: 820px) {
+      max-height: 300px;
+    }
+
+    /* You can continue adding more media queries for other screen sizes as needed */
+  }
+
+  &.showDropdown {
+    .dropdownContent {
+      /* Existing styles remain unchanged */
+      max-height: 100px;
+      /* Set the desired height of the dropdown */
+
+      /* New responsive styles for the dropdown content when open */
+      @media screen and (max-width: 600px) {
+        max-height: 200px;
+      }
+
+      @media screen and (min-width: 601px) and (max-width: 820px) {
+        max-height: 300px;
+      }
+
+      /* You can continue adding more media queries for other screen sizes as needed */
+    }
+  }
+}
+
+.dropdownButton {
+  /* Existing button styles remain unchanged */
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 1px;
+  background-color: #29A61A;
+  transition: background-color 0.5s ease;
+  /* New responsive styles for the button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.dropdownInput {
+  display: flex;
+  align-items: center;
+  /* Center the items vertically */
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.inputContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  padding: 1rem;
+}
+
+.inputWrapper input {
+  flex: 1;
+  padding: 0.5rem;
+  /* Add padding to all sides of the input */
+  padding-right: 2.5rem;
+  /* Add extra padding on the right to accommodate the button */
+  border-radius: 4px;
+  /* Adjust border radius if needed */
+  border: 1px solid #ccc;
+  /* Add a border for better visibility */
+  transition: border-color 0.3s ease; /* Add a transition for smooth effect */
+
+  &:focus {
+    /* Styles to apply when the input is clicked or focused */
+    border-color: #29A61A; /* Change the border color to your desired color */
+    outline: none; /* Remove the default focus outline */
+    box-shadow: 0 0 0 2px #29A61A; /* Optionally add a box shadow for better visibility */
+  }
+}
+
+.inputWrapper input.inputFilled {
+  /* Apply styles when the input has content */
+  /* For example, add a yellow border */
+  border: 1px solid #29A61A;
+}
+
+.inputWrapper button {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  /* Remove background color of the button */
+  border: none;
+  /* Remove the button border */
+  cursor: pointer;
+
+  .aboutButtonWhatsapp {
+    width: 2rem;
+
+    .gatsby-image-wrapper {
+      width: 2rem;
+    }
+
+
+  }
+
+  .aboutButtonWhatsapp.active {
+    filter: invert(40%) sepia(90%) saturate(793%) hue-rotate(77deg) brightness(102%) contrast(86%);
+    .gatsby-image-wrapper {
+      filter: invert(40%) sepia(90%) saturate(793%) hue-rotate(77deg) brightness(102%) contrast(86%);
+    }
+
+  }
+}

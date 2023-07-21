@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from "react-scroll";
-import WhatsappButton from './Button';
+import WhatsappButton from './WhatsappButton';
 import "../styles/global.scss"
 
 interface NavbarProps {
@@ -199,7 +199,7 @@ export default function SandwichMenu({ scrollToSection }: NavbarProps) {
                                 />
                                 Ubicanos
                             </Link>
-                            <WhatsappButton pregunta={preguntaDinamica}/>
+                            <WhatsappButton pregunta={preguntaDinamica} className='modalMenuButton'/>
                             <p className='modalFooter'>GrupoVega <br />2023™</p>
                            
                         </div>

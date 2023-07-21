@@ -1,6 +1,6 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import WhatsappButton from './Button';
+import WhatsappButton from './WhatsappButton';
 import ScrollToTopButton from './ScrollToTop';
 import "../styles/global.scss"
 
